@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Tracker</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📍 Phone Tracker</h1>
+    <p>Udostępnianie lokalizacji telefonu</p>
+
+    <div class="status" id="status">
+        Lokalizacja nie została udostępniona
+    </div>
+
+    <button id="startBtn">
+        Udostępnij moją lokalizację
+    </button>
+
+    <div id="map"></div>
+
+    <div class="coordinates">
+        <p>Szerokość: <span id="lat">---</span></p>
+        <p>Długość: <span id="lon">---</span></p>
+    </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
